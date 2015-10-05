@@ -6,12 +6,12 @@
 
 // calculation for gross profit margin percentage
 
-
+var profitVariables = ["enter the total cost of goods","enter in the amount used for payroll","enter the total amount of revenue from sales"];
 
 var costOfGoods = prompt("enter the total cost of goods");
-var revenue = prompt("enter the total amount of revenue from sales");
 var payRoll = prompt("enter in the amount used for payroll");
-var profit = Number(costOfGoods) + Number(payRoll) - Number(revenue);
+var revenue = prompt("enter the total amount of revenue from sales");
+var profit = Number(revenue) - Number(costOfGoods) + Number(payRoll);
 
 var profitConstruction = [costOfGoods, revenue, profit, division,payRoll];
 
