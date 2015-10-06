@@ -5,45 +5,35 @@
 
 // calculation for gross profit margin percentage
 
-// variables
-var costOfGoods;
-var payRoll;
-var revenue;
-var profit;
 
-// prompts allow me to get the information needed to calculate the profit margin
 
 var costOfGoods = prompt("We are going to calculate your gross profit margin. \nenter the total cost of goods");
 var payRoll = prompt("enter in the total cost for payroll");
 var revenue = prompt("enter the total amount of revenue from sales");
+var profit = Number(revenue) - Number(costOfGoods) + Number(payRoll);
 
-// calculating profit needed for final percentage
+// calculating profit
 
 var profit = Number(revenue) - (Number(costOfGoods) + Number(payRoll));
 
-// array of variables in order to keep together
 
 var profitConstruction = [costOfGoods, revenue, profit, division, payRoll];
+
+console.log(profit);
 
 // calculating ratio of cost to revenue
 
 var division = profitConstruction [2]  / profitConstruction [1] + profitConstruction [4];
 
+
 var profitConstruction = [costOfGoods, revenue, profit, division, payRoll];
+
+console.log(division);
 
 // calculating profit margin percentage
 
 var profitMargin = profitConstruction [3]  * 100;
 
-// console log of the information I have calculated
-
-console.log(profit);
-console.log(division);
 console.log(profitMargin);
 
-
-// alert of the final profit margin percentage of the information entered
-
 alert("your companies profit margin percentage is " + profitMargin);
-
-
