@@ -27,7 +27,7 @@ var profitConstruction = [costOfGoods, revenue, profit, division, payRoll];
 
 // calculating ratio of cost to revenue
 
-var division = profitConstruction [2]  / profitConstruction [1] + profitConstruction [4];
+var division = profitConstruction [2]  / profitConstruction [1];
 
 var profitConstruction = [costOfGoods, revenue, profit, division, payRoll];
 
@@ -37,9 +37,9 @@ var profitMargin = profitConstruction [3]  * 100;
 
 // console log of the information I have calculated
 
-console.log(profit);
+console.log("your companies gross profit after cost of goods and payroll is " +  profit);
 console.log(division);
-console.log(profitMargin);
+console.log( "your companies gross profit margin percentage is " + profitMargin);
 
 
 // alert of the final profit margin percentage of the information entered
